@@ -57,4 +57,16 @@ cd GradMA
 python main_gradma_sw.py --gamma_l_list 0=0.001,100=0.001,200=0.001  --gamma_g_list 0=1.0,100=1.0,200=1.0 --beta_1_list 0=0.5,100=0.5,200=0.5 --beta_2_list 0=0.5,100=0.5,200=0.5 --batch_size 64 --I 5 --comm_round 1000 --data_partition_mode non_iid_dirichlet --non_iid_alpha 0.01 --client_num 100 --selected_client_num 10 --memory_num 100 --seed 0 --model_type Lenet_5 --data_set CIFAR-10 --eval_batch_size 256 --device cuda --log_level INFO
 ```
 
+## Citation
+If you find this useful for your work, please consider citing:
+
+```
+@InProceedings{Luo2023GradMA,
+  title = {GradMA: A Gradient-Memory-based Accelerated Federated Learning with Alleviated Catastrophic Forgetting},
+  author = {Luo, Kangyang and Li, Xiang and Lan, Yunshi and Gao, Ming},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023}
+}
+```
+
 
